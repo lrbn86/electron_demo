@@ -1,14 +1,17 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, Menu } = require('electron');
+//Menu.setApplicationMenu(false);
 
 function createWindow() {
   const win = new BrowserWindow({
     width: 800,
-    height: 622, // 22px is added because it counts the title bar into the calculation
+    height: 600,
     webPreferences: {
       nodeIntegration: true
     },
     resizable: false,
-    maximizable: false
+    maximizable: false,
+    center: true,
+    useContentSize: true,
   });
 
   win.loadFile('index.html');

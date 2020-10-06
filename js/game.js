@@ -21,7 +21,7 @@ new Phaser.Game(config);
 
 var cursors;
 var player;
-var speed = 100;
+var speed = 200;
 
 function preload() {
   this.load.image('ball', './assets/ball.png');
